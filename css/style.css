@@ -1,0 +1,165 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #919191;
+}
+
+/* NAVBAR */
+
+header,
+.navbar {
+  /* background-color: #D32930; */
+  background-color: #ED5564;
+}
+
+.navbar .navbar-brand img {
+  width: 100px;
+}
+
+.navbar li {
+  height: 100%;
+}
+
+.navbar a {
+  height: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: #3C7DCA;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 66px;
+}
+
+main section {
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+
+main section h1 {
+  color: #3C7DCA;
+  display: flex;
+  gap: 15px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+main section h1 img {
+  width: 40px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 0px 17px -3px rgba(60, 125, 202, 0.75);
+  box-shadow: 0px 0px 17px -3px rgba(60, 125, 202, 0.75);
+
+  margin: 20px 0;
+  width: 100%;
+}
+
+.card img {
+  width: 200px;
+  margin: auto;
+}
+
+.card .btn-group a {
+  background-color: #3C7DCA;
+  border: none;
+}
+
+/* Barra de busca */
+.search-container {
+  padding: 0 15px;
+}
+
+.search-container .input-group {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container .form-control {
+  border: 2px solid #3C7DCA;
+  border-right: none;
+  font-size: 1rem;
+}
+
+.search-container .form-control:focus {
+  border-color: #3C7DCA;
+  box-shadow: 0 0 0 0.2rem rgba(60, 125, 202, 0.25);
+}
+
+.search-container .btn-primary {
+  background-color: #3C7DCA;
+  border: 2px solid #3C7DCA;
+  font-weight: bold;
+}
+
+.search-container .btn-primary:hover {
+  background-color: #2d5f99;
+  border-color: #2d5f99;
+}
+
+/* Resultados da busca */
+#search-results {
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+#search-results .alert {
+  margin: 20px 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Botão Carregar Mais */
+#load-more-btn {
+  background-color: #3C7DCA;
+  border: none;
+  padding: 12px 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#load-more-btn:hover {
+  background-color: #2d5f99;
+}
+
+footer {
+  background-color: #3C7DCA;
+  height: 66px;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+/* Responsividade para cards */
+@media (max-width: 991.98px) {
+  .card {
+    margin: 15px auto;
+    max-width: 400px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main section h1 {
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+
+  .search-container {
+    padding: 0 15px;
+  }
+}
