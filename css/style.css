@@ -53,6 +53,8 @@ main section h1 img {
   width: 40px;
 }
 
+/* Card */
+
 .card {
   -webkit-box-shadow: 0px 0px 17px -3px rgba(60, 125, 202, 0.75);
   box-shadow: 0px 0px 17px -3px rgba(60, 125, 202, 0.75);
@@ -70,6 +72,16 @@ main section h1 img {
   background-color: #3C7DCA;
   border: none;
 }
+
+/* Card button */
+
+#pokemon-container a,
+#search-results a,
+#filter-results a {
+  background-color: #3C7DCA;
+  width: 100%;
+}
+
 
 /* Barra de busca */
 .search-container {
@@ -114,6 +126,14 @@ main section h1 img {
   font-weight: 500;
 }
 
+.modal .modal-body ul {
+  list-style: none;
+}
+
+.modal .modal-body input {
+  width: 20px;
+}
+
 /* Botão Carregar Mais */
 #load-more-btn {
   background-color: #3C7DCA;
@@ -141,11 +161,17 @@ footer p {
   color: #ffffff;
 }
 
-/* Responsividade para cards */
+
+
+/* Responsividade */
 @media (max-width: 991.98px) {
   .card {
     margin: 15px auto;
     max-width: 400px;
+  }
+
+  #abrirModal {
+    margin-top: 1.5rem;
   }
 
   footer p {
@@ -157,6 +183,10 @@ footer p {
   main section h1 {
     margin-left: 15px;
     font-size: 1.5rem;
+  }
+
+  #abrirModal {
+    margin-top: 1.5rem;
   }
 
   .search-container {
